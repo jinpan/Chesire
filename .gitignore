@@ -1,0 +1,14 @@
+# Private Files
+*.csv
+*.txt
+databse.db
+settings_local.py
+
+ENV/*
+media/*
+static/*
+
+*.pyc
+*.swp
+*.swo
+
