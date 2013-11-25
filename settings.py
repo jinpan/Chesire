@@ -102,10 +102,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'chesire.urls'
+ROOT_URLCONF = 'urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'chesire.wsgi.application'
+WSGI_APPLICATION = 'wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -122,6 +122,9 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
+
+    'django_extensions',
+
     'core',
 )
 
@@ -153,3 +156,13 @@ LOGGING = {
         },
     }
 }
+
+# install local settings
+try:
+    import settings_local
+    update_settings = settings_local.update_settings
+except ImportError:
+    pass
+else:
+    update_settings(globals())
+

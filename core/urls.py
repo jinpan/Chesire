@@ -6,6 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('chesire.core.views',
     url(r'^$', 'home', name='home'),
+    url(r'^wikipedia/$', 'wikipedia', name='wikipedia'),
     # url(r'^chesire/', include('chesire.foo.urls')),
 
 )
