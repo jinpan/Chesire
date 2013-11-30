@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+}
+
+*:focus { outline: none; }
+
+body { 
+    background: #fff url() no-repeat left top; 
+	background-size: cover;
+}
+
+body:before {
+    content: "";
+    position: absolute;
+    background: url(http://images6.fanpop.com/image/photos/34000000/Dessert-dessert-34072905-1329-886.jpg);
+    background-size: cover;
+    z-index: -1; /* Keep the background behind the content */
+    height: 100%; width: 100%; 
+
+    /* don't forget to use the prefixes you need */
+    transform-origin: top left;
+	-webkit-filter: blur(15px);
+	-moz-filter: blur(15px);
+	-o-filter: blur(15px);
+	-ms-filter: blur(15px);
+	filter: blur(15px);
+}
+
+h3 {
+	text-align: center;
+	font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+#search_box {
+	width: 590px;
+	height: 200px;
+	margin: 0 auto;
+	padding-top: 200px;
+	outline: none;
+}
+
+#search {
+	margin: 20px auto;
+	width: 550px;
+	font-size: 30pt;
+	padding: 10px;
+	border-width: 5px;
+	border-color: orange;
+	border-style: solid;
+	border-radius: 10px;
+	opacity: 0.80;
+}
