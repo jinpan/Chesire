@@ -1,0 +1,53 @@
+Despite recent progress at HealthCare.gov, a raft of problems will remain beyond the Obama administration's Saturday deadline to make the troubled federal insurance website work.
+
+The news isn't all bad: Users say the site looks better, pages load faster, and more people are getting through to sign up for health plans.
+
+But technical problems still affect HealthCare.gov's ability to verify users' identities and transmit accurate enrollment data to insurers, officials say. The data center that supports the site faces continuing challenges, and tools for processing payments to insurers haven't been built.
+
+Technical staff in Washington have been racing up to the end-of-November deadline. In their last public pronouncement on the effort, three days before the deadline, officials said they had much to do to get the site into a condition where it functions smoothly for a majority of users.
+
+The success of the White House's signature domestic initiative is riding on the technicians' ability to fix the site, as well as the rest of the federal technology supporting enrollment. Across the nation, that effort is being eyed hopefully by supporters of the law, since the site is the centerpiece of the effort to overhaul American health care and extend coverage to millions of people.
+
+Those hopes were deflated by a series of blows for the administration right up until Nov. 30, and the site continued to experience outages, both planned and unplanned, in the week leading up to the deadline.
+
+The Wall Street Journal reported on Wednesday that the administration was planning to change its Web-hosting provider from Verizon Communications Inc. subsidiary Terremark to Hewlett-Packard Co. in the spring, a complex transition that could introduce new challenges and take months; and the same day, the administration said it was shelving for a year any attempts to operate an online exchange for small businesses. On Wednesday, Verizon declined to comment on its clients.
+
+Officials mixed optimism with caution. "November 30th does not represent a relaunch of HealthCare.gov," said Julie Bataille, a spokeswoman for the government's Centers for Medicare and Medicaid Services, which operates the site. "It is not a magical date. There will be times after November 30th when the site, like any website, does not perform optimally."
+
+For the fix-it drive that began in late October, the administration tapped former White House adviser Jeff Zients and QSSI, a unit of UnitedHealth Group, to act as the new lead contractor, establishing a 24-hour "war room" operations center to coordinate contractors who previously weren't working well together. Since then, officials have focused on fixing the kinds of wrinkles that were most obvious to users.
+
+They have reported success in speeding up the response time of the system, lowering it from an average of eight seconds at launch to less than one second for most users. They say they have eliminated a host of glitches in the software so that pages now load incorrectly less than 1% of the time. And they say they have added "visual cues" to help users navigate the system more easily.
+
+Technicians have been racing to add new computer server, storage and database capacity to the website, hoping to get the site ready to withstand 50,000 simultaneous users by Sunday, as was originally intended, said people familiar with the work. "I think we are close," said one.
+
+Some people involved with enrollment say they have seen a notable uptick in recent weeks. Maine Community Health Options, a nonprofit plan based in Lewiston, Maine, now is getting "hundreds of enrollments" a day, rather than the dozens it saw trickling in earlier this month, said Chief Executive Kevin Lewis.
+
+But problems with the performance of the site's databases, storage and servers and their interaction with each other continue to slow the site or make it unavailable for short periods, according to government officials and contractors working on the project.
+
+Karen Egozi, CEO of the Epilepsy Foundation of Florida, which has trained nearly 50 people to help others enroll, said the performance of the website has improved in recent weeks but suffers from unpredictable glitches. On Nov. 19, Secretary of Health and Human Services Kathleen Sebelius visited a medical center in Miami and watched a member of Ms. Egozi's staff help a couple fill out an application. The website failed, in front of a local TV camera crew.
+
+On the weekend of Nov. 23 and 24, Ms. Egozi said her navigators were able to sign up a few people. But on Nov. 25, she said the site was down for a little while. "Sometimes, similar to when the secretary was here, the site does not let us through to the next section," she said. "It was not working today, but yesterday it worked well."
+
+One source of early problems: The government had bought web-hosting services from Terremark subsidiary that initially gave it a highly virtualized system of servers shared by other groups within the Medicare center, rather than a dedicated group of computer servers for HealthCare.gov. Plans are in place to replace the Verizon unit with H-P this spring.
+
+HHS also didn't initially contract for a backup website or monitoring tools like those used by sophisticated consumer sites, according to people familiar with the matter.
+
+The website still has no separate backup copy, but it did replace the virtual database with dedicated hardware, and bought and installed monitoring software.
+
+Meanwhile, the site has a backlog of users who encountered problems in its first weeks of operation. Some appear to be locked out from the early stages unless they can get their account deleted. Others are stuck at the next big stage, persuading the federal government of their identity and their income so their application for tax credits can be processed.
+
+Yannette Castellano waits to talk to a navigator about health-care options available under the Affordable Care Act, at the North Shore Medical Center, on Nov. 19 in Miami. AP
+
+Guy Dicharry of Los Lunas, N.M., said he had been in limbo at the identity-verification stage since Oct. 5, despite giving the site personal information several times so it can confirm his income. He hasn't heard back about a paper application submitted Nov. 1.
+
+"This has been botched and is not getting fixed. If it's not fixed, I'll be ringing in 2014 as a newly uninsured person. I suspect that is the opposite of what the ACA was supposed to achieve," said Mr. Dicharry, who described himself as a supporter of the Affordable Care Act. Because of their age and income, Mr. Dicharry and his wife stand to gain valuable subsidies toward the cost of coverage, but only if he buys it through the website.
+
+Ronald Gallagher of Paradise Valley, Ariz., said he had been helping his daughter shop for coverage. After 16 hours over four days starting Oct. 1, they were told her identity was verified and she could pick a plan. But when they logged in to the website, it said her application was "In Progress."
+
+After failing to get help from a call center, father and daughter filled out an application over the phone in early November, but they still haven't received a letter telling what insurance plans she qualifies for. "So far, nothing the government has done has worked," Mr. Gallagher said.
+
+Even when people successfully enroll, insurers say they sometimes get incorrect data. Ms. Bataille, the government spokeswoman, said officials have seen "marked improvements" in the information transmitted to insurers but "we know there are still issues that remain." An HHS official also said that there had been improvements in identity verification, but that the agency knew it wasn't fully fixed.
+
+Mr. Lewis of Maine Community Health Options also worried about a larger volume of applicants, especially since insurers have now been told to find ways to process applications that come in from people as late as Dec. 23 in time for their coverage to begin Jan. 1, rather than a previous Dec. 15 deadline.
+
+If "there's an avalanche on that last date, I don't know if the system will be able to support all that," he said.

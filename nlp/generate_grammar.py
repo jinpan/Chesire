@@ -22,10 +22,14 @@ class Production(object):
 
     def to_string(self):
         template = '%s -> %s'
-        tot_count = sum(self.expansion.itervalues())
+        tot_count = 0
+        for key, val in self.expansion.iteritems():
+            if key:
+                tot_count += val
         total = 0
         for key, val in self.expansion.iteritems():
-            total += float('%f' % (float(val) / tot_count))
+            if key:
+                total += float('%f' % (float(val) / tot_count))
         difference = 1 - total
         rhs = [['%s' % key, '%f' % (float(val) / tot_count)]
                 for key, val in self.expansion.iteritems()
@@ -33,21 +37,18 @@ class Production(object):
         shuffle(rhs)
         delta = int(round(difference / 0.000001))
         for idx in range(abs(delta)):
-            print rhs[idx][1]
             if delta > 0:
                 rhs[idx][1] = '%f' % (float(rhs[idx][1]) + 0.000001)
             elif delta < 0:
                 rhs[idx][1] = '%f' % (float(rhs[idx][1]) - 0.000001)
-            print rhs[idx][1]
         rhs = ['%s [%s]' % (key, val) for key, val in rhs]
-        regex = r'.*\[(0\.\d+)\].*'
+        regex = r'.*\[([01]\.\d+)\].*'
         check_total = 0
         for element in rhs:
             m = match(regex, element)
             check_total += float(m.group(1))
-        print total, delta, check_total
 
-        return template % (self.variable, rhs)
+        return template % (self.variable, ' | '.join(rhs))
 
 
 def parse(tree):
