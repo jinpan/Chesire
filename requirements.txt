@@ -1,0 +1,13 @@
+Django==1.6
+PyYAML==3.10
+argparse==1.2.1
+beautifulsoup4==4.3.2
+django-extensions==1.2.5
+django-shell-plus==1.1.5
+ipdb==0.8
+ipython==1.1.0
+nltk==2.0.4
+numpy==1.8.0
+requests==2.0.1
+six==1.4.1
+wsgiref==0.1.2

@@ -1,6 +1,5 @@
 # Private Files
 *.csv
-*.txt
 *.log
 databse.db
 settings_local.py
