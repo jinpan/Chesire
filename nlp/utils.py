@@ -4,6 +4,8 @@ from bs4 import BeautifulSoup
 from nltk import clean_html
 from nltk import data
 from nltk import word_tokenize
+from nltk.corpus import stopwords
+from nltk.corpus import treebank
 from numpy import array
 from requests import get
 
@@ -69,16 +71,23 @@ class Node(object):
 
 
 def cosine_distance(sentence1, sentence2, naive=True):
+    stopwords_set = set(stopwords.words())
+    def make_counter(sentence):
+        words = word_tokenize(sentence)[:-1]
+        words = filter(lambda word: word not in stopwords_set, words)
+
+        return Counter(words)
+    def length(vector):
+        return sum((item ** 2 for item in vector)) ** 0.5
+
     if not naive:
         raise NotImplementedError()
 
-    words1 = Counter(word_tokenize(sentence1))
-    words2 = Counter(word_tokenize(sentence2))
-    words1_vals, words2_vals = array(words1.values()), array(words2.values())
+    words1, words2 = make_counter(sentence1), make_counter(sentence2)
 
     common_words = set(words1.keys()) & set(words2.keys())
     numerator = sum([words1[word] ** 2 * words2[word] ** 2 for word in common_words])
-    denom = words1_vals.dot(words1_vals) ** 0.5 * words2_vals.dot(words2_vals) ** 0.5
+    denom = length(words1.values()) * length(words2.values())
 
     if not denom:
         return 0.0
@@ -158,5 +167,4 @@ if __name__ == '__main__':
     central_nodes =  get_central_nodes(page_rank_result, 3)
     for node in central_nodes:
         print node.value, '\n'
-    
 
