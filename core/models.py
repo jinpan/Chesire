@@ -18,6 +18,9 @@ class Vote(models.Model):
     class Meta:
         abstract = True
 
+    def __unicode__(self):
+        return self.vote
+
 class QuestionVote(Vote):
     question = models.ForeignKey('Question')
 
@@ -42,5 +45,14 @@ class Answer(models.Model):
     
 class Article(models.Model):
     url = models.URLField()
+#    title = models.TextField()
     text = models.TextField()
+
+    def save(self, overRide = True):
+        print ("lookie, i'm saving!")
+        super(Article, self).save()
+
+    def __unicode__(self):
+        return self.url
+
 
